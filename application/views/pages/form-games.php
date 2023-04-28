@@ -21,7 +21,7 @@
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="description">Description</label>
-							<textarea name="description" id="description" rows="5" class="form-control" required <?= isset($game) ? $game["description"] : "" ?>></textarea>
+							<textarea name="description" id="description" rows="5" class="form-control" value="<?= isset($game) ? $game["description"]: "" ?>" required ></textarea>
 						</div>
 					</div>
 					
@@ -35,7 +35,7 @@
 					<div class="col-md-6">
 						<div class="form-group">
 							<label for="developer">Developer</label>
-							<input type="text" class="form-control" name="developer" id="developer" placeholder="developer" required value="<?= isset($game) ? $game["developer"] : "" ?>">
+							<input type="text" class="form-control" name="developer" id="developer" placeholder="developer" required value="<?= isset($game)?$game["developer"]:""?>">
 						</div>
 					</div>
 
